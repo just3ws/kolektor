@@ -5,6 +5,7 @@ LOGRAGE_EXCEPTIONS = %w[controller action format id].freeze
 Rails.application.configure do
   config.enabled = true
   config.formatter = Lograge::Formatters::Logstash.new
+  config.logger = ActiveSupport::Logger.new($stdout)
   config.custom_options = lambda do |event|
     {
       params: event.payload[:params].except(*LOGRAGE_EXCEPTIONS)

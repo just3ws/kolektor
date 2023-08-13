@@ -21,13 +21,16 @@ require "action_view/railtie"
 Bundler.require(*Rails.groups)
 
 module Kolektor
-  class Application < Rails::Application
+  class Application < Rails::Application # :nodoc:
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
     config.hosts = []
 
     config.active_job.queue_adapter = :sucker_punch
+
+    config.colorize_logging = false
+    config.active_record.colorize_logging = false
 
     # Configuration for the application, engines, and railties goes here.
     #
