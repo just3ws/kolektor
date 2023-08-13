@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class DefaultController < ActionController::Base # :nodoc:
+class DefaultController < ApplicationController # :nodoc:
   rescue_from Exception, with: :handle_internal_server_error
 
   def index
