@@ -5,8 +5,9 @@ LOGRAGE_EXCEPTIONS = %w[controller action format id].freeze
 Rails.application.configure do
   config.lograge.enabled = true
 
-  config.lograge.keep_original_rails_log = false
-  config.lograge.logger = ActiveSupport::Logger.new($stdout)
+  config.lograge.keep_original_rails_log = true
+  # config.lograge.logger = ActiveSupport::Logger.new($stdout)
+  config.lograge.logger = Appsignal::Logger.new('rails', format: Appsignal::Logger::LOGFMT)
 
   # Set the default log formatter but only if we have Lograge
   # enabled since we are using the Lograge JSON formatter.
