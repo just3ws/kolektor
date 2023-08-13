@@ -3,6 +3,16 @@
 class ApplicationController < ActionController::Base # :nodoc:
   rescue_from Exception, with: :handle_internal_server_error
 
+  def append_info_to_payload(payload)
+    super
+
+    payload[:host] = request.host
+  end
+
+  def current_user
+    @current_user ||= { id: 0 }
+  end
+
   private
 
   def handle_internal_server_error(exception)

@@ -28,9 +28,12 @@ group :development do
   # gem "spring"
 end
 
-
 gem "ahoy_matey", "~> 4.2"
 
 gem "rollbar", "~> 3.4"
 
 gem "dotenv-rails", "~> 2.8", :groups => [:development, :test]
+
+gem "lograge", "~> 0.13.0"
+
+gem "logstash-event"
