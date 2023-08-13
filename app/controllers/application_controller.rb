@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base # :nodoc:
     super
 
     payload[:host] = request.host
+    payload[:x_forwarded_for] = request.env['HTTP_X_FORWARDED_FOR']
   end
 
   def current_user
