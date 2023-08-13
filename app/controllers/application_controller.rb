@@ -3,6 +3,10 @@
 class ApplicationController < ActionController::Base # :nodoc:
   rescue_from Exception, with: :handle_internal_server_error
 
+  def index
+    respond_to(&:html)
+  end
+
   def append_info_to_payload(payload)
     super
 

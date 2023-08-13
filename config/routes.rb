@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root 'default#index'
+  root 'application#index'
 
   # Catch-all route for routing errors (404)
   match '*unmatched_route', to: 'errors#not_found', via: :all
