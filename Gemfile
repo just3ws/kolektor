@@ -21,6 +21,14 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+
+  gem 'rubocop', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rake', require: false
+  gem 'rubocop-require_tools', require: false
+  gem 'rubocop-rubycw', require: false
+  gem 'rubocop-thread_safety', require: false
 end
 
 group :development do
