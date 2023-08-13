@@ -49,3 +49,5 @@ gem 'lograge', '~> 0.13.0'
 gem 'logstash-event'
 
 gem 'sucker_punch', '~> 3.1'
+
+gem 'appsignal', '~> 3.4'

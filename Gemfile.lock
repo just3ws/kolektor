@@ -70,6 +70,8 @@ GEM
       activesupport (>= 5.2)
       device_detector
       safely_block (>= 0.2.1)
+    appsignal (3.4.10)
+      rack
     ast (2.4.2)
     base64 (0.1.1)
     builder (3.2.4)
@@ -227,6 +229,7 @@ PLATFORMS
 
 DEPENDENCIES
   ahoy_matey (~> 4.2)
+  appsignal (~> 3.4)
   debug
   dotenv-rails (~> 2.8)
   lograge (~> 0.13.0)
