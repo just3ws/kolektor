@@ -30,7 +30,6 @@ module Kolektor
     config.active_job.queue_adapter = :sucker_punch
 
     config.colorize_logging = false
-    config.active_record.colorize_logging = false
 
     # Configuration for the application, engines, and railties goes here.
     #
