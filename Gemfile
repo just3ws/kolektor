@@ -28,3 +28,5 @@ group :development do
   # gem "spring"
 end
 
+
+gem "ahoy_matey", "~> 4.2"
