@@ -79,6 +79,7 @@ GEM
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
+    colorize (0.8.1)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     cvss (0.99.0)
@@ -103,6 +104,9 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.12.0)
+    fasterer (0.10.1)
+      colorize (~> 0.7)
+      ruby_parser (>= 3.19.1)
     ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -271,6 +275,7 @@ DEPENDENCIES
   dawnscanner (~> 2.2)
   debug
   dotenv-rails (~> 2.8)
+  fasterer (~> 0.10.1)
   lograge (~> 0.13.0)
   logstash-event
   pg (~> 1.1)

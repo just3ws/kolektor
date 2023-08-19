@@ -59,3 +59,5 @@ gem 'bundler-audit', '~> 0.9.1', group: :development
 gem 'dawnscanner', '~> 2.2', group: :development
 
 gem 'rack', '~> 2.2'
+
+gem 'fasterer', '~> 0.10.1', group: :development
