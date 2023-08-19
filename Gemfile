@@ -61,3 +61,7 @@ gem 'dawnscanner', '~> 2.2', group: :development
 gem 'rack', '~> 2.2'
 
 gem 'fasterer', '~> 0.10.1', group: :development
+
+gem 'pronto', '~> 0.11.1', group: :development
+
+gem 'faraday-retry', '~> 2.2'
