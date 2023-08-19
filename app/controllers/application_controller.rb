@@ -11,6 +11,8 @@ class ApplicationController < ActionController::Base # :nodoc:
     super
 
     payload[:host] = request.host
+    payload[:request_id] = request.uuid
+    payload[:user_id] = current_user.id if current_user
     payload[:x_forwarded_for] = request.env['HTTP_X_FORWARDED_FOR']
   end
 
