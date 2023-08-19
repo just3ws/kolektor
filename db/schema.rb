@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_813_170_024) do
+ActiveRecord::Schema[7.0].define(version: 20_230_819_210_725) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -58,6 +58,35 @@ ActiveRecord::Schema[7.0].define(version: 20_230_813_170_024) do
     t.datetime 'started_at'
     t.index ['user_id'], name: 'index_ahoy_visits_on_user_id'
     t.index ['visit_token'], name: 'index_ahoy_visits_on_visit_token', unique: true
+  end
+
+  create_table 'notable_jobs', force: :cascade do |t|
+    t.string 'note_type'
+    t.text 'note'
+    t.text 'job'
+    t.string 'job_id'
+    t.string 'queue'
+    t.float 'runtime'
+    t.float 'queued_time'
+    t.datetime 'created_at'
+  end
+
+  create_table 'notable_requests', force: :cascade do |t|
+    t.string 'note_type'
+    t.text 'note'
+    t.string 'user_type'
+    t.bigint 'user_id'
+    t.text 'action'
+    t.integer 'status'
+    t.text 'url'
+    t.string 'request_id'
+    t.string 'ip'
+    t.text 'user_agent'
+    t.text 'referrer'
+    t.text 'params'
+    t.float 'request_time'
+    t.datetime 'created_at'
+    t.index %w[user_type user_id], name: 'index_notable_requests_on_user'
   end
 
   create_table 'spatial_ref_sys', primary_key: 'srid', id: :integer, default: nil, force: :cascade do |t|

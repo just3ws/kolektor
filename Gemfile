@@ -66,3 +66,5 @@ gem 'faraday-retry', '~> 2.2'
 
 # gem 'pronto', '~> 0.11.1', group: :development
 # gem 'rugged'
+
+gem 'notable', '~> 0.5.0'
