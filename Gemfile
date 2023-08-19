@@ -53,3 +53,5 @@ gem 'sucker_punch', '~> 3.1'
 gem 'appsignal', '~> 3.4'
 
 gem 'brakeman', '~> 6.0', group: :development
+
+gem 'bundler-audit', '~> 0.9.1', group: :development
