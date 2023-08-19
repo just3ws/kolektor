@@ -51,3 +51,5 @@ gem 'logstash-event'
 gem 'sucker_punch', '~> 3.1'
 
 gem 'appsignal', '~> 3.4'
+
+gem 'brakeman', '~> 6.0', group: :development

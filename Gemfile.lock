@@ -74,6 +74,7 @@ GEM
       rack
     ast (2.4.2)
     base64 (0.1.1)
+    brakeman (6.0.1)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
@@ -230,6 +231,7 @@ PLATFORMS
 DEPENDENCIES
   ahoy_matey (~> 4.2)
   appsignal (~> 3.4)
+  brakeman (~> 6.0)
   debug
   dotenv-rails (~> 2.8)
   lograge (~> 0.13.0)
