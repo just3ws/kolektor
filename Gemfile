@@ -55,3 +55,7 @@ gem 'appsignal', '~> 3.4'
 gem 'brakeman', '~> 6.0', group: :development
 
 gem 'bundler-audit', '~> 0.9.1', group: :development
+
+gem 'dawnscanner', '~> 2.2', group: :development
+
+gem 'rack', '~> 2.2'

@@ -81,7 +81,19 @@ GEM
       thor (~> 1.0)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    cvss (0.99.0)
     date (3.3.3)
+    dawnscanner (2.2.0)
+      cvss
+      haml
+      justify
+      logger-colors
+      psych
+      ptools
+      ruby_parser
+      sys-uname
+      terminal-table
+      thor
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
@@ -91,15 +103,22 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     erubi (1.12.0)
+    ffi (1.15.5)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    haml (6.1.2)
+      temple (>= 0.8.2)
+      thor
+      tilt
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.6.0)
     irb (1.7.4)
       reline (>= 0.3.6)
     json (2.6.3)
+    justify (1.0.2)
     language_server-protocol (3.17.0.3)
+    logger-colors (1.0.0)
     lograge (0.13.0)
       actionpack (>= 4)
       activesupport (>= 4)
@@ -135,6 +154,9 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.3)
+    psych (5.1.0)
+      stringio
+    ptools (1.5.0)
     puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -208,7 +230,10 @@ GEM
     rubocop-thread_safety (0.5.1)
       rubocop (>= 0.90.0)
     ruby-progressbar (1.13.0)
+    ruby_parser (3.20.3)
+      sexp_processor (~> 4.16)
     safely_block (0.4.0)
+    sexp_processor (4.17.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -216,9 +241,16 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    stringio (3.0.8)
     sucker_punch (3.1.0)
       concurrent-ruby (~> 1.0)
+    sys-uname (1.2.3)
+      ffi (~> 1.1)
+    temple (0.10.2)
+    terminal-table (3.0.2)
+      unicode-display_width (>= 1.1.1, < 3)
     thor (1.2.2)
+    tilt (2.2.0)
     timeout (0.4.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -236,12 +268,14 @@ DEPENDENCIES
   appsignal (~> 3.4)
   brakeman (~> 6.0)
   bundler-audit (~> 0.9.1)
+  dawnscanner (~> 2.2)
   debug
   dotenv-rails (~> 2.8)
   lograge (~> 0.13.0)
   logstash-event
   pg (~> 1.1)
   puma (~> 5.0)
+  rack (~> 2.2)
   rails (~> 7.0.7)
   rollbar (~> 3.4)
   rubocop
