@@ -62,8 +62,7 @@ gem 'rack', '~> 2.2'
 
 gem 'fasterer', '~> 0.10.1', group: :development
 
-gem 'pronto', '~> 0.11.1', group: :development
-
 gem 'faraday-retry', '~> 2.2'
 
-gem 'rugged'
+# gem 'pronto', '~> 0.11.1', group: :development
+# gem 'rugged'
