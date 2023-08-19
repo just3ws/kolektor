@@ -66,4 +66,4 @@ gem 'pronto', '~> 0.11.1', group: :development
 
 gem 'faraday-retry', '~> 2.2'
 
-gem 'rugged', '~> 1.6', group: :development
+gem 'rugged'

@@ -324,7 +324,7 @@ DEPENDENCIES
   rubocop-require_tools
   rubocop-rubycw
   rubocop-thread_safety
-  rugged (~> 1.6)
+  rugged
   sprockets-rails
   sucker_punch (~> 3.1)
   tzinfo-data
