@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base # :nodoc:
   end
 
   def current_user
-    @current_user ||= { id: 0 }
+    @current_user ||= Customer.new
   end
 
   private
